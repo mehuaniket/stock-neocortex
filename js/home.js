@@ -1,6 +1,6 @@
 var app = angular.module('StockNeoApp', ['ngMaterial', 'ngMdIcons']);
 
-app.controller('AppCtrl', ['$scope', '$mdBottomSheet','$mdSidenav', '$mdDialog', function($scope, $mdBottomSheet, $mdSidenav, $mdDialog){
+app.controller('AppCtrl', ['$scope','$http','$mdBottomSheet','$mdSidenav', '$mdDialog', function($scope,$http, $mdBottomSheet, $mdSidenav, $mdDialog){
 
   $scope.toggleSidenav = function(menuId) {
     $mdSidenav(menuId).toggle();
@@ -30,38 +30,13 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet','$mdSidenav', '$mdDialog',
       icon: 'settings'
     }
   ];
-  $scope.activity = [
-      {
-        what: 'Skymetweather,The Skymetweather,Skymetweather India',
-        who: 'moneycontrol.com',
-        when: '3:08PM',
-        notes: " As per reports, Coconut and Copra prices may fall further by November. The price of Coconut is likely to fall Rs. 6 per piece and that of Copra to Rs. 63 per k .."
-      },
-      {
-        what: 'sulekha,The sulekha',
-        who: 'moneycontrol.com',
-        when: '3:08PM',
-        notes: "Sulekha.com lists out the available legal remedies that can be used in case there is a delay in getting the possession of the property. It lists out possible laws under which one can file a complaint against the builder."
-      },
-      {
-        what: 'SEBI decentralises filing process',
-        who: 'indiatimes.com',
-        when: '3:08PM',
-        notes: "Stock market regulator SEBI has decentralised the process of filing draft offer documents. Companies who wish to raise capital upto Rs 100 crore can now file their draft red herring prospectus (DRHP) at SEBI's zonal office under whose jurisdication the company's registered office falls."
-      },
-      {
-        what: 'Wall St falls; energy shares dragged down further by oil',
-        who: 'moneycontrol.com',
-        when: '3:08PM',
-        notes: "We should eat this: Grapefruit, Squash, Corn, and Tomatillo tacos"
-      },
-      {
-        what: 'Divers recover crashed AirAsia jets cockpit voice recorder',
-        who: 'indiatimes.com',
-        when: '3:08PM',
-        notes: "Divers retrieved the cockpit voice recorder from the wreck of an AirAsia passenger jet on Tuesday, MetroTV said quoting a transport official, a key piece of evidence for investigators to determine the cause of the crash that killed 162 people."
-      },
-    ];
+  $http.get('newscrunch')
+        .success(function(data) {
+            $scope.activity=data;
+        })
+        .error(function(data,status,error,config){
+            $scope.activity = [{heading:"Error",description:"Could not load json   data"}];
+        });
   $scope.alert = '';
   $scope.showListBottomSheet = function($event) {
     $scope.alert = '';

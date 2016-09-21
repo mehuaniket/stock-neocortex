@@ -149,10 +149,10 @@
 
                                                 </div>
                                                 <div class="md-tile-content">
-                                                    <h3>{{item.what}}</h3>
-                                                    <h4>{{item.who}}</h4>
+                                                    <h3>{{item.title}}</h3>
+                                                    <h4><a href={{item.url}}>{{item.url}}</a></h4>
                                                     <p>
-                                                        {{item.notes}}
+                                                        {{item.meta}}
                                                     </p>
                                                 </div>
                                             </md-item-content>
@@ -178,19 +178,18 @@
                                   <div id="chart_div" style="height: 400px; min-width: 310px"></div>
                                 </md-card-content>
                                 <md-card-content>
-                                    <h2>Favorites</h2>
+                                    <h2>today's news for {stock}</h2>
                                     <md-list>
 
-                                        <md-item ng-repeat="item in activity | filter:search | orderBy:'-what'">
+                                        <md-item ng-repeat="item in activity | filter:search | orderBy:'date'">
                                             <md-item-content>
                                                 <div class="md-tile-left inset" hide-sm>
 
                                                 </div>
                                                 <div class="md-tile-content">
-                                                    <h3>{{item.what}}</h3>
-                                                    <h4>{{item.who}}</h4>
+                                                    <h3><a href={{item.url}}>{{item.title}}</a></h3>
                                                     <p>
-                                                        {{item.notes}}
+                                                        {{item.meta}}
                                                     </p>
                                                 </div>
                                             </md-item-content>
