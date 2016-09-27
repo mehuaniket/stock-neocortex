@@ -17,4 +17,4 @@ class NeocrawlItem(scrapy.Item):
     meta=Field()
     newsdesc=Field()
     totalnews=Field()
-    
+    tokens=Field()

@@ -28,11 +28,29 @@ app.controller('AppCtrl', ['$scope','$http','$mdBottomSheet','$mdSidenav', '$mdD
       link : 'showListBottomSheet($event)',
       title: 'Settings',
       icon: 'settings'
+    },
+    {
+      title:'logout',
+      icon:'user'
     }
   ];
-  $http.get('newscrunch')
+  // $scope.newsindex=10;
+  // $scope.MoreNews=function(){
+  //   $scope.newsindex=$scope.MoreNews+5;
+  //   $http.get('newscrunch/'+String.valueOf($scope.newsindex))
+  //         .success(function(data) {
+  //             $scope.activity=data;
+  //             console.log(data)
+  //         })
+  //         .error(function(data,status,error,config){
+  //             $scope.activity = [{heading:"Error",description:"Could not load json   data"}];
+  //         });
+  // }
+
+  $http.get('newscrunch/')
         .success(function(data) {
             $scope.activity=data;
+            console.log(data)
         })
         .error(function(data,status,error,config){
             $scope.activity = [{heading:"Error",description:"Could not load json   data"}];
