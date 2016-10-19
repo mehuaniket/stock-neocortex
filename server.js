@@ -5,6 +5,7 @@ app.use('/img',express.static(__dirname + '/img'));
 app.use('/js',express.static(__dirname + '/js'));
 app.use('/css',express.static(__dirname + '/css'));
 app.use('/app',express.static(__dirname + '/app'));
+app.use('/res',express.static(__dirname + '/res'));
 
 //modules initialization
 var MongoClient = require('mongodb').MongoClient;
@@ -51,6 +52,9 @@ app.get('/home',isLoggedIn,function (req, res) {
      res.sendFile(path.join(__dirname + "/views/home.html"));
 });
 
+app.get('/index',isLoggedIn,function (req, res) {
+     res.sendFile(path.join(__dirname + "/views/index.html"));
+});
 app.get('/newscrunch', function (req, res) {
   var value=10
   MongoClient.connect(url, function(err, db) {
@@ -75,6 +79,33 @@ app.get('/newscrunch', function (req, res) {
 
 
 });
+app.get('/nifty/json', function (req, res) {
+
+  MongoClient.connect(url, function(err, db) {
+    var getNiftyName = function(cb) {
+   db.collection('nifty').find({},{_id:0}).sort({date:-1}).toArray(cb);
+   }
+  assert.equal(null, err);
+  console.log("Connected correctly to server.");
+
+  getNiftyName(function(err, data){
+      if(err) {
+           console.log(err);
+           return res(err);
+          }
+      else {
+           console.log(data);
+           return res.json(data);
+          }
+      });
+  db.close();
+  });
+
+
+});
+
+
+
 
 // route middleware to ensure user is logged in
 function isLoggedIn(req, res, next) {
