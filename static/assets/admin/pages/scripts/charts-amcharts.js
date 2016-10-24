@@ -2,18 +2,39 @@ var ChartsAmcharts = function() {
 
 
     var initChartSample12 = function() {
+//       var chartData = [];
+//       generateChartData();
+//
+//       function generateChartData() {
+//             var firstDate = new Date( 2012, 0, 1 );
+//             firstDate.setDate( firstDate.getDate() - 500 );
+//             firstDate.setHours( 0, 0, 0, 0 );
+//
+//             for ( var i = 0; i < 500; i++ ) {
+//               var newDate = new Date( firstDate );
+//               newDate.setDate( newDate.getDate() + i );
+//
+//              var a = Math.round( Math.random() * ( 40 + i ) ) + 100 + i;
+//              var b = Math.round( Math.random() * 100000000 );
+//
+//              chartData.push( {
+//                 "date": newDate,
+//                 "value": a,
+//                 "volume": b
+//              } );
+//   }
+// }
+
         var chartData = [];
         chartData=generateChartData();
 
         function generateChartData() {
-            var chartData=[];
-            $.getJSON("https://www.quandl.com/api/v3/datasets/NSE/TCS.json?api_key=agh3EisozxmzwjdutDMA", function(json) {
-              console.log(json.dataset);
-              for (var i = 0; i < json.dataset.data.length; i++) {
+            $.getJSON("https://www.quandl.com/api/v3/datasets/NSE/TCS.json?sort_order=asc?api_key=agh3EisozxmzwjdutDMA", function(json) {
+              for (var i = json.dataset.data.length-1; i>0 ; i--) {
                   chartData.push({
-                      date: new Date(json.dataset.data[i][0]),
-                      value: json.dataset.data[i][1],
-                      volume: json.dataset.data[i][7]
+                      "date": new Date(json.dataset.data[i][0]),
+                      "value": json.dataset.data[i][1],
+                      "volume": json.dataset.data[i][7]
                   });
                 }
               });

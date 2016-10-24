@@ -1,15 +1,17 @@
 import pandas as pd
-import Quandl, math, datetime
+import quandl, math, datetime
 import numpy as np
 from sklearn import preprocessing, cross_validation, svm
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 from matplotlib import style
 import pickle
+import time
 
 style.use('ggplot')
 
-df = Quandl.get('WIKI/GOOGL')
+df = quandl.get('NSE/TCS')
+print df['open']
 df = df[['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume',]]
 df['HL_PCT'] = (df['Adj. High'] - df['Adj. Close']) / df['Adj. Close'] * 100.0
 df['PCT_change'] = (df['Adj. Close'] - df['Adj. Open']) / df['Adj. Open'] * 100.0
@@ -44,7 +46,7 @@ pickle_in=open('linearregression.pickle','rb')
 clf=pickle.load(pickle_in)
 
 accuracy=clf.score(X_test, y_test)
-#print(accuracy)
+print(accuracy)
 
 forecast_set=clf.predict(X_lately)
 print(forecast_set, accuracy, forecast_out)
@@ -52,8 +54,8 @@ print(forecast_set, accuracy, forecast_out)
 df['Forecast']=np.nan
 
 last_date=df.iloc[-1].name
-last_unix=last_date.timestamp()
-#last_unix = time.mktime(datetime.date(last_date.year, last_date.month, last_date.day).timetuple())
+#last_unix=last_date.timestamp()
+last_unix = time.mktime(datetime.date(last_date.year, last_date.month, last_date.day).timetuple())
 one_day=86400
 next_unix=last_unix+one_day
 

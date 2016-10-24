@@ -67,6 +67,7 @@ class LoginHandler(BaseHandler):
 
         if id is not "nid":
             self.set_secure_cookie("user",id)
+            self.set_cookie("name",self.uname)
             self.redirect("/")
         else:
             self.redirect("/login")
@@ -91,7 +92,8 @@ class  HomeHandler(BaseHandler):
 
     @tornado.web.authenticated
     def get(self):
-        self.render('home.html')
+        name=self.get_cookie('name')
+        self.render('home.html',name=name)
 
 class MainHandler(BaseHandler):
     '''main handler check cookie if not valid than redirect to login'''
@@ -109,6 +111,11 @@ class LatestNewsHandler(BaseHandler):
         db=client.neocortex
         news=db.moneystocknews.find({},{"title":1,"url":1,"newsdesc":1,"date":1}).limit(value)
         self.write(dumps(news))
+
+class GraphHandler(BaseHandler):
+    def get(self):
+        name=self.get_cookie('name')
+        self.render('graph.html',name=name)
 
 
 
@@ -129,7 +136,8 @@ application = tornado.web.Application(handlers=[
     (r'/login',LoginHandler),
     (r'/logout', LogoutHandler),
     (r'/signup', signUpHandler),
-     (r"/news/([0-9]+)", LatestNewsHandler),
+    (r"/news/([0-9]+)", LatestNewsHandler),
+    (r"/graphs", GraphHandler),
 ],**settings)
 
 if __name__ == "__main__":
