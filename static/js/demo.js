@@ -1,6 +1,19 @@
 type = ['','info','success','warning','danger'];
+var value=10;
+$('#loadm').on('click', function() {
+value+=5;
+$( "#news" ).empty();
+$.getJSON("news/"+value.toString(),function (json) {
 
-
+    for (var i = 0; i < json.length; i++) {
+        var tr="";
+        tr+= '<a href="'+json[i].url+'class="list-group-item active">';
+        tr+='<h4 class="list-group-item-heading">' + json[i].title + "</h4></a>";
+        tr+='<p class="list-group-item-text">'+ json[i].newsdesc + "</p><hr>";
+        $('#news').append(tr);
+    }
+});
+});
 $(document).ready(function () {
     $.getJSON("news/10",function (json) {
 

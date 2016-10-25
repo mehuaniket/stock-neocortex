@@ -2,46 +2,25 @@ var ChartsAmcharts = function() {
 
 
     var initChartSample12 = function() {
-//       var chartData = [];
-//       generateChartData();
-//
-//       function generateChartData() {
-//             var firstDate = new Date( 2012, 0, 1 );
-//             firstDate.setDate( firstDate.getDate() - 500 );
-//             firstDate.setHours( 0, 0, 0, 0 );
-//
-//             for ( var i = 0; i < 500; i++ ) {
-//               var newDate = new Date( firstDate );
-//               newDate.setDate( newDate.getDate() + i );
-//
-//              var a = Math.round( Math.random() * ( 40 + i ) ) + 100 + i;
-//              var b = Math.round( Math.random() * 100000000 );
-//
-//              chartData.push( {
-//                 "date": newDate,
-//                 "value": a,
-//                 "volume": b
-//              } );
-//   }
-// }
+
 
         var chartData = [];
-        chartData=generateChartData();
-
-        function generateChartData() {
-            $.getJSON("https://www.quandl.com/api/v3/datasets/NSE/TCS.json?sort_order=asc?api_key=agh3EisozxmzwjdutDMA", function(json) {
-              for (var i = json.dataset.data.length-1; i>0 ; i--) {
-                  chartData.push({
-                      "date": new Date(json.dataset.data[i][0]),
-                      "value": json.dataset.data[i][1],
-                      "volume": json.dataset.data[i][7]
-                  });
-                }
+        $('#optgra').on('change', function() {
+          url="https://www.quandl.com/api/v3/datasets/NSE/"+this.value+".json?sort_order=asc?api_key=agh3EisozxmzwjdutDMA";
+          console.log(url);
+          $.getJSON(url, function(json) {
+            for (var i = json.dataset.data.length-1; i>0 ; i--) {
+              chartData.push({
+                "date": new Date(json.dataset.data[i][0]),
+                "value": json.dataset.data[i][1],
+                "volume": json.dataset.data[i][7]
               });
+            }
+            chart.dataProvider = chartData;
+            chart.validateData();
+          });
+        });
 
-        console.log(chartData)
-        return chartData
-        }
         var chart = AmCharts.makeChart("chart_12", {
             type: "stock",
             "theme": "light",
