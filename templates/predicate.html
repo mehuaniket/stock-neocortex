@@ -52,6 +52,48 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="static/assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
+<script type="text/javascript">
+window.onload = function () {
+	var datap=[];
+  $.getJSON("/analresult", function(json) {
+
+    for (var i =0;i<json[0].ADANIPORTS[0].length ; i++) {
+      var tommorrow=new Date();
+			tommorrow.setDate(tommorrow.getDate()+i);
+			datap.push({
+        "x": tommorrow,
+        "y": json[0].ADANIPORTS[0][i]
+      });
+    }
+		console.log(datap);
+  });
+	var chart = new CanvasJS.Chart("predition",
+	{
+		title: {
+			text: "future cast for stock"
+		},
+		axisX: {
+			labelFormatter: function (e) {
+				return CanvasJS.formatDate( e.value, "DD MMM");
+			},
+		},
+
+		data: [
+		{
+			type: "spline",
+			dataPoints: datap
+		}
+
+		]
+	});
+
+ 	chart.render();
+}
+
+
+</script>
+
+<script type="text/javascript" src="static/assets/script/canvasjs.min.js"></script>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -70,7 +112,6 @@ License: You must have a valid license purchased only from themeforest(the above
 			<div class="menu-toggler sidebar-toggler hide">
 				<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
 			</div>
-		</div>
 		</div>
 		<!-- END LOGO -->
 		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
@@ -180,7 +221,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<li>
 							<a href="/home">
 							<i class="icon-bulb"></i>
-							home</a>
+							/home</a>
 						</li>
 					</ul>
 				</li>
@@ -229,94 +270,9 @@ License: You must have a valid license purchased only from themeforest(the above
 				</ul>
 			</div>
 			<!-- END PAGE HEADER-->
-      <div class="form-group">
-        <label class="col-md-3 control-label" for="title">select stock</label>
-        <div class="col-md-5">
-          <select id="optgra" class="form-control input-small input-inline">
-              <option value="ABB">	ABB India Ltd.</option>
-              <option value="APOLLOHOSP">	Apollo Hospitals Enterprises Ltd.</option>
-              <option value="ASHOKLEY">	Ashok Leyland Ltd.</option>
-              <option value="BAJFINANCE">	Bajaj Finance Ltd.</option>
-              <option value="BAJAJFINSV">	Bajaj Finserv Ltd.</option>
-              <option value="BEL">	Bharat Electronics Ltd.</option>
-              <option value="BHARATFORG">	Bharat Forge Ltd.</option>
-              <option value="BRITANNIA">	Britannia Industries Ltd.</option>
-              <option value="CADILAHC">	Cadila Healthcare Ltd.</option>
-              <option value="CAIRN">	Cairn India Ltd.</option>
-              <option value="CASTROLIND">	Castrol India Ltd.</option>
-              <option value="COLPAL">	Colgate Palmolive (India) Ltd.</option>
-              <option value="CONCOR">	Container Corporation of India Ltd.</option>
-              <option value="CUMMINSIND">	Cummins India Ltd.</option>
-              <option value="DLF">	DLF Ltd.</option>
-              <option value="DABUR">	Dabur India Ltd.</option>
-              <option value="DIVISLAB">	Divi's Laboratories Ltd.</option>
-              <option value="EMAMILTD">	Emami Ltd.</option>
-              <option value="GSKCONS">	GlaxoSmithkline Consumer Healthcare Ltd.</option>
-              <option value="GLAXO">	Glaxosmithkline Pharmaceuticals Ltd.</option>
-              <option value="GLENMARK">	Glenmark Pharmaceuticals Ltd.</option>
-              <option value="GODREJCP">	Godrej Consumer Products Ltd.</option>
-              <option value="HINDPETRO">	Hindustan Petroleum Corporation Ltd.</option>
-              <option value="HINDZINC">	Hindustan Zinc Ltd.</option>
-              <option value="IBULHSGFIN">	Indiabulls Housing Finance Ltd.</option>
-              <option value="IOC">	Indian Oil Corporation Ltd.</option>
-              <option value="INDIGO">	InterGlobe Aviation Ltd.</option>
-              <option value="JSWSTEEL">	JSW Steel Ltd.</option>
-              <option value="LICHSGFIN">	LIC Housing Finance Ltd.</option>
-              <option value="MARICO">	Marico Ltd.</option>
-              <option value="MOTHERSUMI">	Motherson Sumi Systems Ltd.</option>
-              <option value="NHPC">	NHPC Ltd.</option>
-              <option value="NMDC">	NMDC Ltd.</option>
-              <option value="OIL">	Oil India Ltd.</option>
-              <option value="OFSS">	Oracle Financial Services Software Ltd.</option>
-              <option value="PIDILITIND">	Pidilite Industries Ltd.</option>
-              <option value="PEL">	Piramal Enterprises Ltd.</option>
-              <option value="PFC">	Power Finance Corporation Ltd.</option>
-              <option value="PGHH">	Procter & Gamble Hygiene & Health Care Ltd.</option>
-              <option value="PNB">	Punjab National Bank</option>
-              <option value="SHREECEM">	Shree Cement Ltd.</option>
-              <option value="SRTRANSFIN">	Shriram Transport Finance Co. Ltd.</option>
-              <option value="SIEMENS">	Siemens Ltd.</option>
-              <option value="SAIL">	Steel Authority of India Ltd.</option>
-              <option value="TITAN">	Titan Company Ltd.</option>
-              <option value="TORNTPHARM">	Torrent Pharmaceuticals Ltd.</option>
-              <option value="UPL">	UPL Ltd.</option>
-              <option value="UBL">	United Breweries Ltd.</option>
-              <option value="MCDOWELL-N">	United Spirits Ltd.</option>
-              <option value="VEDL">	Vedanta Ltd.</option>
-            </select>
-            <span class="help-block">
-              cnx nifty only available now </span>
-            </div>
-          </div>
-      <div class="row">
-        <div class="col-md-12">
-          <!-- BEGIN CHART PORTLET-->
-          <div class="portlet light bordered">
-            <div class="portlet-title">
-              <div class="caption">
-                <i class="icon-bar-chart font-green-haze"></i>
-                <span class="caption-subject bold uppercase font-green-haze"> Stock Charts</span>
-                <span class="caption-helper">with stock events</span>
-              </div>
-              <div class="tools">
-                <a href="javascript:;" class="collapse">
-                </a>
-                </a>
-                <a href="javascript:;" class="reload">
-                </a>
-                <a href="javascript:;" class="fullscreen">
-                </a>
-              </div>
-            </div>
-            <div class="portlet-body">
-              <div id="chart_12" class="chart" style="height: 500px;">
-              </div>
-            </div>
-          </div>
-          <!-- END CHART PORTLET-->
-        </div>
+      <div id="stockal">
       </div>
-
+			<div id="predition">
 			</div>
 				</div>
 			</div>
@@ -401,20 +357,6 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="static/assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
 <script src="static/js/demo.js" type="text/javascript"></script>
 <script src="static/assets/admin/pages/scripts/ui-general.js" type="text/javascript"></script>
-<!-- BEGIN PAGE LEVEL PLUGINS -->
-<script src="static/assets/global/plugins/amcharts/amcharts/amcharts.js" type="text/javascript"></script>
-<script src="static/assets/global/plugins/amcharts/amcharts/serial.js" type="text/javascript"></script>
-<script src="static/assets/global/plugins/amcharts/amcharts/pie.js" type="text/javascript"></script>
-<script src="static/assets/global/plugins/amcharts/amcharts/radar.js" type="text/javascript"></script>
-<script src="static/assets/global/plugins/amcharts/amcharts/themes/light.js" type="text/javascript"></script>
-<script src="static/assets/global/plugins/amcharts/amcharts/themes/patterns.js" type="text/javascript"></script>
-<script src="static/assets/global/plugins/amcharts/amcharts/themes/chalk.js" type="text/javascript"></script>
-<script src="static/assets/global/plugins/amcharts/ammap/ammap.js" type="text/javascript"></script>
-<script src="static/assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" type="text/javascript"></script>
-<script src="static/assets/global/plugins/amcharts/amstockcharts/amstock.js" type="text/javascript"></script>
-<!-- END PAGE LEVEL PLUGINS -->
-<!-- BEGIN PAGE LEVEL SCRIPTS -->
-<script src="static/assets/admin/pages/scripts/charts-amcharts.js"></script>
 <script>
 jQuery(document).ready(function() {
    // initiate layout and plugins
@@ -422,7 +364,6 @@ jQuery(document).ready(function() {
 Layout.init(); // init current layout
 QuickSidebar.init(); // init quick sidebar
 Demo.init(); // init demo features
-ChartsAmcharts.init();
 });
 </script>
 <!-- END JAVASCRIPTS -->

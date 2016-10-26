@@ -14,6 +14,9 @@ $.getJSON("news/"+value.toString(),function (json) {
     }
 });
 });
+
+
+
 $(document).ready(function () {
     $.getJSON("news/10",function (json) {
 

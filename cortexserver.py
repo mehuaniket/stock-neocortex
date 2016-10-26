@@ -112,10 +112,23 @@ class LatestNewsHandler(BaseHandler):
         news=db.moneystocknews.find({},{"title":1,"url":1,"newsdesc":1,"date":1}).limit(value)
         self.write(dumps(news))
 
+class AnalysisHandler(BaseHandler):
+    def get(self):
+        
+        client=MongoClient('localhost',27017)
+        db=client.neocortex
+        anal=db.predicate.find({},{"_id":0})
+        self.write(dumps(anal))
+
 class GraphHandler(BaseHandler):
     def get(self):
         name=self.get_cookie('name')
         self.render('graph.html',name=name)
+
+class PredicateHandler(BaseHandler):
+    def get(self):
+        name=self.get_cookie('name')
+        self.render('predicate.html',name=name)
 
 
 
@@ -138,6 +151,8 @@ application = tornado.web.Application(handlers=[
     (r'/signup', signUpHandler),
     (r"/news/([0-9]+)", LatestNewsHandler),
     (r"/graphs", GraphHandler),
+    (r"/predition",PredicateHandler),
+    (r"/analresult",AnalysisHandler)
 ],**settings)
 
 if __name__ == "__main__":
