@@ -55,18 +55,22 @@ License: You must have a valid license purchased only from themeforest(the above
 <script type="text/javascript">
 window.onload = function () {
 	var datap=[];
-  $.getJSON("/analresult", function(json) {
+	$('#optpred').on('change', function() {
+  $.getJSON("/analresult/"+this.value, function(json) {
 
-    for (var i =0;i<json[0].ADANIPORTS[0].length ; i++) {
+    for (var i =0;i<json[0].length ; i++) {
       var tommorrow=new Date();
 			tommorrow.setDate(tommorrow.getDate()+i);
 			datap.push({
         "x": tommorrow,
-        "y": json[0].ADANIPORTS[0][i]
+        "y": json[0][i]
       });
     }
+
 		console.log(datap);
   });
+	chart.render();
+});
 	var chart = new CanvasJS.Chart("predition",
 	{
 		title: {
@@ -270,10 +274,25 @@ window.onload = function () {
 				</ul>
 			</div>
 			<!-- END PAGE HEADER-->
-      <div id="stockal">
-      </div>
-			<div id="predition">
-			</div>
+			<div class="form-group">
+				<label class="col-md-3 control-label" for="title">select stock</label>
+				<div class="col-md-5">
+					<select id="optpred" class="form-control input-small input-inline">
+							<option value="ADANIPORTS">	adani port</option>
+							<option value="AMBUJACEM">ambuja cement</option>
+							<option value="ASIANPAINT">	asian paint</option>
+							<option value="AXISBANK">axis bank</option>
+						</select>
+						<span class="help-block">
+							cnx nifty only available now </span>
+						</div>
+					</div>
+					<div class="row">
+		        <div class="col-md-12">
+			           <div id="predition">
+		            	</div>
+					 </div>
+				 </div>
 				</div>
 			</div>
 		</div>

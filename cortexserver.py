@@ -113,12 +113,14 @@ class LatestNewsHandler(BaseHandler):
         self.write(dumps(news))
 
 class AnalysisHandler(BaseHandler):
-    def get(self):
-        
+    def get(self,name_value):
+
         client=MongoClient('localhost',27017)
         db=client.neocortex
         anal=db.predicate.find({},{"_id":0})
-        self.write(dumps(anal))
+        for document in anal:
+            if name_value in document:
+                self.write(dumps(document[name_value]))
 
 class GraphHandler(BaseHandler):
     def get(self):
@@ -152,7 +154,7 @@ application = tornado.web.Application(handlers=[
     (r"/news/([0-9]+)", LatestNewsHandler),
     (r"/graphs", GraphHandler),
     (r"/predition",PredicateHandler),
-    (r"/analresult",AnalysisHandler)
+    (r"/analresult/([A-Z]+)",AnalysisHandler)
 ],**settings)
 
 if __name__ == "__main__":
