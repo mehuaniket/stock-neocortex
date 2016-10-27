@@ -17,6 +17,7 @@ db=client.neocortex
 nifty=db.nifty.find({},{"_id":0})
 quandl.ApiConfig.api_key = 'agh3EisozxmzwjdutDMA'
 for st in nifty:
+    print st['symbol']
     df = quandl.get('NSE/'+st['symbol'])
     df = df[['Open', 'High', 'Low', 'Close', 'Total Trade Quantity',]]
     df['HL_PCT'] = (df['High'] - df['Close']) / df['Close'] * 100.0

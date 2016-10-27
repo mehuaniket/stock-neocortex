@@ -56,6 +56,7 @@ License: You must have a valid license purchased only from themeforest(the above
 window.onload = function () {
 	var datap=[];
 	$('#optpred').on('change', function() {
+	datap=[]
   $.getJSON("/analresult/"+this.value, function(json) {
 
     for (var i =0;i<json[0].length ; i++) {
@@ -68,9 +69,7 @@ window.onload = function () {
     }
 
 		console.log(datap);
-  });
-	chart.render();
-});
+
 	var chart = new CanvasJS.Chart("predition",
 	{
 		title: {
@@ -92,6 +91,9 @@ window.onload = function () {
 	});
 
  	chart.render();
+	});// chart.render();
+});
+
 }
 
 
@@ -225,7 +227,7 @@ window.onload = function () {
 						<li>
 							<a href="/home">
 							<i class="icon-bulb"></i>
-							/home</a>
+							home</a>
 						</li>
 					</ul>
 				</li>
@@ -245,8 +247,8 @@ window.onload = function () {
 							prediction</a>
 						</li>
 						<li>
-							<a href="/stockprices">
-							Pricing Tables</a>
+							<a href="/datepicknews">
+							Date picker news</a>
 						</li>
 					</ul>
 				</li>
@@ -268,7 +270,7 @@ window.onload = function () {
 				<ul class="page-breadcrumb">
 					<li>
 						<i class="fa fa-home"></i>
-						<a href="index.html">Home</a>
+						<a href="/home">Home</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
 				</ul>
@@ -278,25 +280,26 @@ window.onload = function () {
 				<label class="col-md-3 control-label" for="title">select stock</label>
 				<div class="col-md-5">
 					<select id="optpred" class="form-control input-small input-inline">
-							<option value="ADANIPORTS">	adani port</option>
-							<option value="AMBUJACEM">ambuja cement</option>
-							<option value="ASIANPAINT">	asian paint</option>
-							<option value="AXISBANK">axis bank</option>
+							<option value="ADANIPORTS">	Adani port</option>
+							<option value="AMBUJACEM">Ambuja cement</option>
+							<option value="ASIANPAINT">	Asian paint</option>
+							<option value="AXISBANK">Axis bank</option>
 						</select>
 						<span class="help-block">
 							cnx nifty only available now </span>
 						</div>
-					</div>
+			</div>
+
 					<div class="row">
-		        <div class="col-md-12">
-			           <div id="predition">
-		            	</div>
+		        <div class="col-md-12" >
+			           <div id="predition" height="500px" >
+		             </div>
 					 </div>
 				 </div>
+
 				</div>
 			</div>
 		</div>
-	</div>
 	<!-- END CONTENT -->
 
 </div>

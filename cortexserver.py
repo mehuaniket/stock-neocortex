@@ -132,6 +132,20 @@ class PredicateHandler(BaseHandler):
         name=self.get_cookie('name')
         self.render('predicate.html',name=name)
 
+class SpnewsHandler(BaseHandler):
+    def get(self):
+        name_value=self.get_argument("query")
+        print name_value
+        client=MongoClient('localhost',27017)
+        db=client.neocortex
+        anal=db.predicate.find({"tokens":{"$in":[name_value]}},{"_id":0,"url":0,"tokes":0,"totalnews":0,"meta":0,"newsdesc":0})
+        self.write(dumps(anal))
+
+class DateNewsHandler(BaseHandler):
+    def get(self):
+        name=self.get_cookie('name')
+        self.render('datepickernews.html',name=name)
+
 
 
 
@@ -154,7 +168,9 @@ application = tornado.web.Application(handlers=[
     (r"/news/([0-9]+)", LatestNewsHandler),
     (r"/graphs", GraphHandler),
     (r"/predition",PredicateHandler),
-    (r"/analresult/([A-Z]+)",AnalysisHandler)
+    (r"/analresult/([A-Z]+)",AnalysisHandler),
+    (r"/spnews",SpnewsHandler),
+    (r"/datepicknews",DateNewsHandler)
 ],**settings)
 
 if __name__ == "__main__":

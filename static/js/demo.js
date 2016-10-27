@@ -3,8 +3,8 @@ var value=10;
 $('#loadm').on('click', function() {
 value+=5;
 $( "#news" ).empty();
+$('#optpred').on('change', function() {
 $.getJSON("news/"+value.toString(),function (json) {
-
     for (var i = 0; i < json.length; i++) {
         var tr="";
         tr+= '<a href="'+json[i].url+'class="list-group-item active">';
@@ -12,6 +12,7 @@ $.getJSON("news/"+value.toString(),function (json) {
         tr+='<p class="list-group-item-text">'+ json[i].newsdesc + "</p><hr>";
         $('#news').append(tr);
     }
+  });
 });
 });
 
