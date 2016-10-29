@@ -1,0 +1,101 @@
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab508" }, "Company Name" : "ABB India Ltd.", "Industry" : "INDUSTRIAL MANUFACTURING", "Symbol" : "ABB", "Series" : "EQ", "ISIN Code" : "INE117A01022" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab509" }, "Company Name" : "ACC Ltd.", "Industry" : "CEMENT & CEMENT PRODUCTS", "Symbol" : "ACC", "Series" : "EQ", "ISIN Code" : "INE012A01025" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab50a" }, "Company Name" : "Adani Ports and Special Economic Zone Ltd.", "Industry" : "SERVICES", "Symbol" : "ADANIPORTS", "Series" : "EQ", "ISIN Code" : "INE742F01042" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab50b" }, "Company Name" : "Ambuja Cements Ltd.", "Industry" : "CEMENT & CEMENT PRODUCTS", "Symbol" : "AMBUJACEM", "Series" : "EQ", "ISIN Code" : "INE079A01024" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab50c" }, "Company Name" : "Apollo Hospitals Enterprises Ltd.", "Industry" : "HEALTHCARE SERVICES", "Symbol" : "APOLLOHOSP", "Series" : "EQ", "ISIN Code" : "INE437A01024" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab50d" }, "Company Name" : "Ashok Leyland Ltd.", "Industry" : "AUTOMOBILE", "Symbol" : "ASHOKLEY", "Series" : "EQ", "ISIN Code" : "INE208A01029" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab50e" }, "Company Name" : "Asian Paints Ltd.", "Industry" : "CONSUMER GOODS", "Symbol" : "ASIANPAINT", "Series" : "EQ", "ISIN Code" : "INE021A01026" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab50f" }, "Company Name" : "Aurobindo Pharma Ltd.", "Industry" : "PHARMA", "Symbol" : "AUROPHARMA", "Series" : "EQ", "ISIN Code" : "INE406A01037" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab510" }, "Company Name" : "Axis Bank Ltd.", "Industry" : "FINANCIAL SERVICES", "Symbol" : "AXISBANK", "Series" : "EQ", "ISIN Code" : "INE238A01034" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab511" }, "Company Name" : "Bajaj Auto Ltd.", "Industry" : "AUTOMOBILE", "Symbol" : "BAJAJ-AUTO", "Series" : "EQ", "ISIN Code" : "INE917I01010" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab512" }, "Company Name" : "Bajaj Finance Ltd.", "Industry" : "FINANCIAL SERVICES", "Symbol" : "BAJFINANCE", "Series" : "EQ", "ISIN Code" : "INE296A01016" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab513" }, "Company Name" : "Bajaj Finserv Ltd.", "Industry" : "FINANCIAL SERVICES", "Symbol" : "BAJAJFINSV", "Series" : "EQ", "ISIN Code" : "INE918I01018" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab514" }, "Company Name" : "Bank of Baroda", "Industry" : "FINANCIAL SERVICES", "Symbol" : "BANKBARODA", "Series" : "EQ", "ISIN Code" : "INE028A01039" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab515" }, "Company Name" : "Bharat Electronics Ltd.", "Industry" : "INDUSTRIAL MANUFACTURING", "Symbol" : "BEL", "Series" : "EQ", "ISIN Code" : "INE263A01016" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab516" }, "Company Name" : "Bharat Forge Ltd.", "Industry" : "INDUSTRIAL MANUFACTURING", "Symbol" : "BHARATFORG", "Series" : "EQ", "ISIN Code" : "INE465A01025" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab517" }, "Company Name" : "Bharat Heavy Electricals Ltd.", "Industry" : "INDUSTRIAL MANUFACTURING", "Symbol" : "BHEL", "Series" : "EQ", "ISIN Code" : "INE257A01026" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab518" }, "Company Name" : "Bharat Petroleum Corporation Ltd.", "Industry" : "ENERGY", "Symbol" : "BPCL", "Series" : "EQ", "ISIN Code" : "INE029A01011" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab519" }, "Company Name" : "Bharti Airtel Ltd.", "Industry" : "TELECOM", "Symbol" : "BHARTIARTL", "Series" : "EQ", "ISIN Code" : "INE397D01024" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab51a" }, "Company Name" : "Bharti Infratel Ltd.", "Industry" : "TELECOM", "Symbol" : "INFRATEL", "Series" : "EQ", "ISIN Code" : "INE121J01017" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab51b" }, "Company Name" : "Bosch Ltd.", "Industry" : "AUTOMOBILE", "Symbol" : "BOSCHLTD", "Series" : "EQ", "ISIN Code" : "INE323A01026" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab51c" }, "Company Name" : "Britannia Industries Ltd.", "Industry" : "CONSUMER GOODS", "Symbol" : "BRITANNIA", "Series" : "EQ", "ISIN Code" : "INE216A01022" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab51d" }, "Company Name" : "Cadila Healthcare Ltd.", "Industry" : "PHARMA", "Symbol" : "CADILAHC", "Series" : "EQ", "ISIN Code" : "INE010B01027" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab51e" }, "Company Name" : "Cairn India Ltd.", "Industry" : "ENERGY", "Symbol" : "CAIRN", "Series" : "EQ", "ISIN Code" : "INE910H01017" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab51f" }, "Company Name" : "Castrol India Ltd.", "Industry" : "ENERGY", "Symbol" : "CASTROLIND", "Series" : "EQ", "ISIN Code" : "INE172A01027" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab520" }, "Company Name" : "Cipla Ltd.", "Industry" : "PHARMA", "Symbol" : "CIPLA", "Series" : "EQ", "ISIN Code" : "INE059A01026" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab521" }, "Company Name" : "Coal India Ltd.", "Industry" : "METALS", "Symbol" : "COALINDIA", "Series" : "EQ", "ISIN Code" : "INE522F01014" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab522" }, "Company Name" : "Colgate Palmolive (India) Ltd.", "Industry" : "CONSUMER GOODS", "Symbol" : "COLPAL", "Series" : "EQ", "ISIN Code" : "INE259A01022" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab523" }, "Company Name" : "Container Corporation of India Ltd.", "Industry" : "SERVICES", "Symbol" : "CONCOR", "Series" : "EQ", "ISIN Code" : "INE111A01017" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab524" }, "Company Name" : "Cummins India Ltd.", "Industry" : "INDUSTRIAL MANUFACTURING", "Symbol" : "CUMMINSIND", "Series" : "EQ", "ISIN Code" : "INE298A01020" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab525" }, "Company Name" : "DLF Ltd.", "Industry" : "CONSTRUCTION", "Symbol" : "DLF", "Series" : "EQ", "ISIN Code" : "INE271C01023" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab526" }, "Company Name" : "Dabur India Ltd.", "Industry" : "CONSUMER GOODS", "Symbol" : "DABUR", "Series" : "EQ", "ISIN Code" : "INE016A01026" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab527" }, "Company Name" : "Divi's Laboratories Ltd.", "Industry" : "PHARMA", "Symbol" : "DIVISLAB", "Series" : "EQ", "ISIN Code" : "INE361B01024" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab528" }, "Company Name" : "Dr. Reddy's Laboratories Ltd.", "Industry" : "PHARMA", "Symbol" : "DRREDDY", "Series" : "EQ", "ISIN Code" : "INE089A01023" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab529" }, "Company Name" : "Eicher Motors Ltd.", "Industry" : "AUTOMOBILE", "Symbol" : "EICHERMOT", "Series" : "EQ", "ISIN Code" : "INE066A01013" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab52a" }, "Company Name" : "Emami Ltd.", "Industry" : "CONSUMER GOODS", "Symbol" : "EMAMILTD", "Series" : "EQ", "ISIN Code" : "INE548C01032" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab52b" }, "Company Name" : "GAIL (India) Ltd.", "Industry" : "ENERGY", "Symbol" : "GAIL", "Series" : "EQ", "ISIN Code" : "INE129A01019" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab52c" }, "Company Name" : "GlaxoSmithkline Consumer Healthcare Ltd.", "Industry" : "CONSUMER GOODS", "Symbol" : "GSKCONS", "Series" : "EQ", "ISIN Code" : "INE264A01014" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab52d" }, "Company Name" : "Glaxosmithkline Pharmaceuticals Ltd.", "Industry" : "PHARMA", "Symbol" : "GLAXO", "Series" : "EQ", "ISIN Code" : "INE159A01016" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab52e" }, "Company Name" : "Glenmark Pharmaceuticals Ltd.", "Industry" : "PHARMA", "Symbol" : "GLENMARK", "Series" : "EQ", "ISIN Code" : "INE935A01035" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab52f" }, "Company Name" : "Godrej Consumer Products Ltd.", "Industry" : "CONSUMER GOODS", "Symbol" : "GODREJCP", "Series" : "EQ", "ISIN Code" : "INE102D01028" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab530" }, "Company Name" : "Grasim Industries Ltd.", "Industry" : "CEMENT & CEMENT PRODUCTS", "Symbol" : "GRASIM", "Series" : "EQ", "ISIN Code" : "INE047A01013" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab531" }, "Company Name" : "HCL Technologies Ltd.", "Industry" : "IT", "Symbol" : "HCLTECH", "Series" : "EQ", "ISIN Code" : "INE860A01027" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab532" }, "Company Name" : "HDFC Bank Ltd.", "Industry" : "FINANCIAL SERVICES", "Symbol" : "HDFCBANK", "Series" : "EQ", "ISIN Code" : "INE040A01026" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab533" }, "Company Name" : "Hero MotoCorp Ltd.", "Industry" : "AUTOMOBILE", "Symbol" : "HEROMOTOCO", "Series" : "EQ", "ISIN Code" : "INE158A01026" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab534" }, "Company Name" : "Hindalco Industries Ltd.", "Industry" : "METALS", "Symbol" : "HINDALCO", "Series" : "EQ", "ISIN Code" : "INE038A01020" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab535" }, "Company Name" : "Hindustan Petroleum Corporation Ltd.", "Industry" : "ENERGY", "Symbol" : "HINDPETRO", "Series" : "EQ", "ISIN Code" : "INE094A01015" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab536" }, "Company Name" : "Hindustan Unilever Ltd.", "Industry" : "CONSUMER GOODS", "Symbol" : "HINDUNILVR", "Series" : "EQ", "ISIN Code" : "INE030A01027" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab537" }, "Company Name" : "Hindustan Zinc Ltd.", "Industry" : "METALS", "Symbol" : "HINDZINC", "Series" : "EQ", "ISIN Code" : "INE267A01025" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab538" }, "Company Name" : "Housing Development Finance Corporation Ltd.", "Industry" : "FINANCIAL SERVICES", "Symbol" : "HDFC", "Series" : "EQ", "ISIN Code" : "INE001A01036" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab539" }, "Company Name" : "I T C Ltd.", "Industry" : "CONSUMER GOODS", "Symbol" : "ITC", "Series" : "EQ", "ISIN Code" : "INE154A01025" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab53a" }, "Company Name" : "ICICI Bank Ltd.", "Industry" : "FINANCIAL SERVICES", "Symbol" : "ICICIBANK", "Series" : "EQ", "ISIN Code" : "INE090A01021" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab53b" }, "Company Name" : "Idea Cellular Ltd.", "Industry" : "TELECOM", "Symbol" : "IDEA", "Series" : "EQ", "ISIN Code" : "INE669E01016" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab53c" }, "Company Name" : "Indiabulls Housing Finance Ltd.", "Industry" : "FINANCIAL SERVICES", "Symbol" : "IBULHSGFIN", "Series" : "EQ", "ISIN Code" : "INE148I01020" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab53d" }, "Company Name" : "Indian Oil Corporation Ltd.", "Industry" : "ENERGY", "Symbol" : "IOC", "Series" : "EQ", "ISIN Code" : "INE242A01010" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab53e" }, "Company Name" : "IndusInd Bank Ltd.", "Industry" : "FINANCIAL SERVICES", "Symbol" : "INDUSINDBK", "Series" : "EQ", "ISIN Code" : "INE095A01012" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab53f" }, "Company Name" : "Infosys Ltd.", "Industry" : "IT", "Symbol" : "INFY", "Series" : "EQ", "ISIN Code" : "INE009A01021" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab540" }, "Company Name" : "JSW Steel Ltd.", "Industry" : "METALS", "Symbol" : "JSWSTEEL", "Series" : "EQ", "ISIN Code" : "INE019A01020" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab541" }, "Company Name" : "Kotak Mahindra Bank Ltd.", "Industry" : "FINANCIAL SERVICES", "Symbol" : "KOTAKBANK", "Series" : "EQ", "ISIN Code" : "INE237A01028" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab542" }, "Company Name" : "LIC Housing Finance Ltd.", "Industry" : "FINANCIAL SERVICES", "Symbol" : "LICHSGFIN", "Series" : "EQ", "ISIN Code" : "INE115A01026" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab543" }, "Company Name" : "Larsen & Toubro Ltd.", "Industry" : "CONSTRUCTION", "Symbol" : "LT", "Series" : "EQ", "ISIN Code" : "INE018A01030" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab544" }, "Company Name" : "Lupin Ltd.", "Industry" : "PHARMA", "Symbol" : "LUPIN", "Series" : "EQ", "ISIN Code" : "INE326A01037" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab545" }, "Company Name" : "Mahindra & Mahindra Ltd.", "Industry" : "AUTOMOBILE", "Symbol" : "M&M", "Series" : "EQ", "ISIN Code" : "INE101A01026" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab546" }, "Company Name" : "Marico Ltd.", "Industry" : "CONSUMER GOODS", "Symbol" : "MARICO", "Series" : "EQ", "ISIN Code" : "INE196A01026" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab547" }, "Company Name" : "Maruti Suzuki India Ltd.", "Industry" : "AUTOMOBILE", "Symbol" : "MARUTI", "Series" : "EQ", "ISIN Code" : "INE585B01010" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab548" }, "Company Name" : "Motherson Sumi Systems Ltd.", "Industry" : "AUTOMOBILE", "Symbol" : "MOTHERSUMI", "Series" : "EQ", "ISIN Code" : "INE775A01035" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab549" }, "Company Name" : "NHPC Ltd.", "Industry" : "ENERGY", "Symbol" : "NHPC", "Series" : "EQ", "ISIN Code" : "INE848E01016" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab54a" }, "Company Name" : "NMDC Ltd.", "Industry" : "METALS", "Symbol" : "NMDC", "Series" : "EQ", "ISIN Code" : "INE584A01023" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab54b" }, "Company Name" : "NTPC Ltd.", "Industry" : "ENERGY", "Symbol" : "NTPC", "Series" : "EQ", "ISIN Code" : "INE733E01010" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab54c" }, "Company Name" : "Oil & Natural Gas Corporation Ltd.", "Industry" : "ENERGY", "Symbol" : "ONGC", "Series" : "EQ", "ISIN Code" : "INE213A01029" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab54d" }, "Company Name" : "Oil India Ltd.", "Industry" : "ENERGY", "Symbol" : "OIL", "Series" : "EQ", "ISIN Code" : "INE274J01014" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab54e" }, "Company Name" : "Oracle Financial Services Software Ltd.", "Industry" : "IT", "Symbol" : "OFSS", "Series" : "EQ", "ISIN Code" : "INE881D01027" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab54f" }, "Company Name" : "Pidilite Industries Ltd.", "Industry" : "CHEMICALS", "Symbol" : "PIDILITIND", "Series" : "EQ", "ISIN Code" : "INE318A01026" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab550" }, "Company Name" : "Power Finance Corporation Ltd.", "Industry" : "FINANCIAL SERVICES", "Symbol" : "PFC", "Series" : "EQ", "ISIN Code" : "INE134E01011" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab551" }, "Company Name" : "Power Grid Corporation of India Ltd.", "Industry" : "ENERGY", "Symbol" : "POWERGRID", "Series" : "EQ", "ISIN Code" : "INE752E01010" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab552" }, "Company Name" : "Procter & Gamble Hygiene & Health Care Ltd.", "Industry" : "CONSUMER GOODS", "Symbol" : "PGHH", "Series" : "EQ", "ISIN Code" : "INE179A01014" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab553" }, "Company Name" : "Punjab National Bank", "Industry" : "FINANCIAL SERVICES", "Symbol" : "PNB", "Series" : "EQ", "ISIN Code" : "INE160A01022" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab554" }, "Company Name" : "Reliance Communications Ltd.", "Industry" : "TELECOM", "Symbol" : "RCOM", "Series" : "EQ", "ISIN Code" : "INE330H01018" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab555" }, "Company Name" : "Reliance Industries Ltd.", "Industry" : "ENERGY", "Symbol" : "RELIANCE", "Series" : "EQ", "ISIN Code" : "INE002A01018" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab556" }, "Company Name" : "Rural Electrification Corporation Ltd.", "Industry" : "FINANCIAL SERVICES", "Symbol" : "RECLTD", "Series" : "EQ", "ISIN Code" : "INE020B01018" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab557" }, "Company Name" : "Shree Cement Ltd.", "Industry" : "CEMENT & CEMENT PRODUCTS", "Symbol" : "SHREECEM", "Series" : "EQ", "ISIN Code" : "INE070A01015" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab558" }, "Company Name" : "Shriram Transport Finance Co. Ltd.", "Industry" : "FINANCIAL SERVICES", "Symbol" : "SRTRANSFIN", "Series" : "EQ", "ISIN Code" : "INE721A01013" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab559" }, "Company Name" : "Siemens Ltd.", "Industry" : "INDUSTRIAL MANUFACTURING", "Symbol" : "SIEMENS", "Series" : "EQ", "ISIN Code" : "INE003A01024" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab55a" }, "Company Name" : "State Bank of India", "Industry" : "FINANCIAL SERVICES", "Symbol" : "SBIN", "Series" : "EQ", "ISIN Code" : "INE062A01020" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab55b" }, "Company Name" : "Steel Authority of India Ltd.", "Industry" : "METALS", "Symbol" : "SAIL", "Series" : "EQ", "ISIN Code" : "INE114A01011" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab55c" }, "Company Name" : "Sun Pharmaceutical Industries Ltd.", "Industry" : "PHARMA", "Symbol" : "SUNPHARMA", "Series" : "EQ", "ISIN Code" : "INE044A01036" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab55d" }, "Company Name" : "Tata Consultancy Services Ltd.", "Industry" : "IT", "Symbol" : "TCS", "Series" : "EQ", "ISIN Code" : "INE467B01029" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab55e" }, "Company Name" : "Tata Motors Ltd DVR", "Industry" : "AUTOMOBILE", "Symbol" : "TATAMTRDVR", "Series" : "EQ", "ISIN Code" : "IN9155A01020" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab55f" }, "Company Name" : "Tata Motors Ltd.", "Industry" : "AUTOMOBILE", "Symbol" : "TATAMOTORS", "Series" : "EQ", "ISIN Code" : "INE155A01022" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab560" }, "Company Name" : "Tata Power Co. Ltd.", "Industry" : "ENERGY", "Symbol" : "TATAPOWER", "Series" : "EQ", "ISIN Code" : "INE245A01021" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab561" }, "Company Name" : "Tata Steel Ltd.", "Industry" : "METALS", "Symbol" : "TATASTEEL", "Series" : "EQ", "ISIN Code" : "INE081A01012" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab562" }, "Company Name" : "Tech Mahindra Ltd.", "Industry" : "IT", "Symbol" : "TECHM", "Series" : "EQ", "ISIN Code" : "INE669C01036" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab563" }, "Company Name" : "Titan Company Ltd.", "Industry" : "CONSUMER GOODS", "Symbol" : "TITAN", "Series" : "EQ", "ISIN Code" : "INE280A01028" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab564" }, "Company Name" : "Torrent Pharmaceuticals Ltd.", "Industry" : "PHARMA", "Symbol" : "TORNTPHARM", "Series" : "EQ", "ISIN Code" : "INE685A01028" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab565" }, "Company Name" : "UPL Ltd.", "Industry" : "FERTILISERS & PESTICIDES", "Symbol" : "UPL", "Series" : "EQ", "ISIN Code" : "INE628A01036" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab566" }, "Company Name" : "UltraTech Cement Ltd.", "Industry" : "CEMENT & CEMENT PRODUCTS", "Symbol" : "ULTRACEMCO", "Series" : "EQ", "ISIN Code" : "INE481G01011" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab567" }, "Company Name" : "United Breweries Ltd.", "Industry" : "CONSUMER GOODS", "Symbol" : "UBL", "Series" : "EQ", "ISIN Code" : "INE686F01025" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab568" }, "Company Name" : "United Spirits Ltd.", "Industry" : "CONSUMER GOODS", "Symbol" : "MCDOWELL-N", "Series" : "EQ", "ISIN Code" : "INE854D01016" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab569" }, "Company Name" : "Vedanta Ltd.", "Industry" : "METALS", "Symbol" : "VEDL", "Series" : "EQ", "ISIN Code" : "INE205A01025" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab56a" }, "Company Name" : "Wipro Ltd.", "Industry" : "IT", "Symbol" : "WIPRO", "Series" : "EQ", "ISIN Code" : "INE075A01022" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab56b" }, "Company Name" : "Yes Bank Ltd.", "Industry" : "FINANCIAL SERVICES", "Symbol" : "YESBANK", "Series" : "EQ", "ISIN Code" : "INE528G01019" }
+{ "_id" : { "$oid" : "57e9870476d63d921c5ab56c" }, "Company Name" : "Zee Entertainment Enterprises Ltd.", "Industry" : "MEDIA & ENTERTAINMENT", "Symbol" : "ZEEL", "Series" : "EQ", "ISIN Code" : "INE256A01028" }

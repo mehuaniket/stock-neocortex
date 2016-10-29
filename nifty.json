@@ -1,0 +1,49 @@
+{ "_id" : { "$oid" : "5801f9ab1e70885f438f2c00" }, "stockname" : "Adani Ports & SEZ Limited", "symbol" : "ADANIPORTS", "industry" : "Infrastructure" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c01" }, "stockname" : "Ambuja Cements Ltd.", "symbol" : "AMBUJACEM", "industry" : "Cement" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c02" }, "stockname" : "Asian Paints Ltd.", "symbol" : "ASIANPAINT", "industry" : "Paint" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c03" }, "stockname" : "Axis Bank Ltd.", "symbol" : "AXISBANK", "industry" : "Banking" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c04" }, "stockname" : "Bajaj Auto Ltd.", "symbol" : "BAJAJ-AUTO", "industry" : "Automobiles" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c05" }, "stockname" : "Bank of Baroda", "symbol" : "BANKBARODA", "industry" : "Banking" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c06" }, "stockname" : "Bharat Heavy Electricals Limited", "symbol" : "BHEL", "industry" : "Electrical Equipment" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c07" }, "stockname" : "Bharat Petroleum Corporation", "symbol" : "BPCL", "industry" : "Oil & Gas" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c08" }, "stockname" : "Bharti Airtel Ltd.", "symbol" : "BHARTIARTL", "industry" : "Telecomunications" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c09" }, "stockname" : "Bosch Ltd.", "symbol" : "BOSCHLTD", "industry" : "" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c0a" }, "stockname" : "Cairn India Ltd.", "symbol" : "CAIRN", "industry" : "Oil & Gas" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c0b" }, "stockname" : "Cipla Ltd.", "symbol" : "CIPLA", "industry" : "Pharmaceuticals" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c0c" }, "stockname" : "Coal India Ltd.", "symbol" : "COALINDIA", "industry" : "Metals" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c0d" }, "stockname" : "Dr. Reddy's Laboratories Ltd.", "symbol" : "DRREDDY", "industry" : "Pharmaceuticals" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c0e" }, "stockname" : "GAIL (India) Ltd.", "symbol" : "GAIL", "industry" : "" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c0f" }, "stockname" : "Grasim Industries Ltd.", "symbol" : "GRASIM", "industry" : "" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c10" }, "stockname" : "HCL Technologies Ltd.", "symbol" : "HCLTECH", "industry" : "Information Technology" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c11" }, "stockname" : "HDFC Bank Ltd.", "symbol" : "HDFCBANK", "industry" : "Banking & Financial Services" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c12" }, "stockname" : "Hero MotoCorp Ltd.", "symbol" : "HEROMOTOCO", "industry" : "Automobiles" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c13" }, "stockname" : "Hindalco Industries Ltd.", "symbol" : "HINDALCO", "industry" : "Metals" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c14" }, "stockname" : "Hindustan Unilever Ltd.", "symbol" : "HINDUNILVR", "industry" : "Consumer Goods" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c15" }, "stockname" : "Housing Development Finance Corporation Ltd.", "symbol" : "HDFC", "industry" : "Financial Services" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c16" }, "stockname" : "ITC Limited", "symbol" : "ITC", "industry" : "Consumer Goods" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c17" }, "stockname" : "ICICI Bank Ltd.", "symbol" : "ICICIBANK", "industry" : "Banking & Financial Services" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c18" }, "stockname" : "Idea Cellular Ltd.", "symbol" : "IDEA", "industry" : "Telecommunications" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c19" }, "stockname" : "IndusInd Bank Ltd.", "symbol" : "INDUSINDBK", "industry" : "Banking" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c1a" }, "stockname" : "Infosys Ltd.", "symbol" : "INFY", "industry" : "Information Technology" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c1b" }, "stockname" : "Kotak Mahindra Bank Ltd.", "symbol" : "KOTAKBANK", "industry" : "Financial Services" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c1c" }, "stockname" : "Larsen & Toubro Ltd.", "symbol" : "LT", "industry" : "" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c1d" }, "stockname" : "Lupin Limited", "symbol" : "LUPIN", "industry" : "Pharmaceuticals" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c1e" }, "stockname" : "Mahindra & Mahindra Ltd.", "symbol" : "M&M", "industry" : "Automobiles" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c1f" }, "stockname" : "Maruti Suzuki India Ltd.", "symbol" : "MARUTI", "industry" : "Automobiles" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c20" }, "stockname" : "NTPC Limited", "symbol" : "NTPC", "industry" : "Electric Utility" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c21" }, "stockname" : "Oil & Natural Gas Corporation Ltd.", "symbol" : "ONGC", "industry" : "Oil & Gas" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c22" }, "stockname" : "PowerGrid Corporation of India Ltd.", "symbol" : "POWERGRID", "industry" : "Electric Utility" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c23" }, "stockname" : "Punjab National Bank", "symbol" : "PNB", "industry" : "Banking" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c24" }, "stockname" : "Reliance Industries Ltd.", "symbol" : "RELIANCE", "industry" : "Energy" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c25" }, "stockname" : "State Bank of India", "symbol" : "SBIN", "industry" : "Banking & Financial Services" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c26" }, "stockname" : "Sun Pharmaceutical Industries Ltd.", "symbol" : "SUNPHARMA", "industry" : "Pharmaceuticals" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c27" }, "stockname" : "Tata Consultancy Services Ltd.", "symbol" : "TCS", "industry" : "Information Technology" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c28" }, "stockname" : "Tata Motors Ltd.", "symbol" : "TATAMOTORS", "industry" : "Automobiles" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c29" }, "stockname" : "Tata Power Co. Ltd.", "symbol" : "TATAPOWER", "industry" : "Electric Utility" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c2a" }, "stockname" : "Tata Steel Ltd.", "symbol" : "TATASTEEL", "industry" : "Steel" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c2b" }, "stockname" : "Tech Mahindra Ltd.", "symbol" : "TECHM", "industry" : "Information Technology" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c2c" }, "stockname" : "UltraTech Cement Ltd.", "symbol" : "ULTRATECH", "industry" : "Cement" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c2d" }, "stockname" : "Vedanta Ltd.", "symbol" : "VEDL", "industry" : "Metals & Mining" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c2e" }, "stockname" : "Wipro", "symbol" : "WIPRO", "industry" : "Information Technology" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c2f" }, "stockname" : "Yes Bank Ltd.", "symbol" : "YESBANK", "industry" : "Banking & Financial Services" }
+{ "_id" : { "$oid" : "5801f9ac1e70885f438f2c30" }, "stockname" : "Zee Entertainment Enterprises Ltd.", "symbol" : "ZEEL", "industry" : "Media & Entertainment" }
