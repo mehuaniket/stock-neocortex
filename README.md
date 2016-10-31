@@ -1,4 +1,5 @@
 #### <b>INTRODUCTION</b>
+
 - this is my sem7 mini project.i think in this project has still many things to do but as not having much time i only able finish some of goals.
   - project is able to do crawl website.(you can use any website but need to add crawler that save things in database as defined structure)
   - project shows graph with news event.
