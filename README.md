@@ -1,35 +1,32 @@
 #### <b>INTRODUCTION</b>
 
-- this is my sem7 mini project.i think in this project has still many things to do but as not having much time i only able finish some of goals.
-  - project is able to do crawl website.(you can use any website but need to add crawler that save things in database as defined structure)
-  - project shows graph with news event.
-  - and also have future prediction algorithm that working on linear regression.
+  - This is 7th semester project. There are many things still need to be done but not having much time I only able finish some of goals I had.
+  - Project can crawl news website.You can add any website to crawl, you will just need to provide xpath for 5 important things. (Title, description, author etc).
+  - Project shows graph with news events mapped on it.
+  - It does linear rigression module to predict future prices. prices are being fetched from quandl servers.
 
 
 ### installation
 
-- To install this project you need scrapy framework.
-- also project use tornado framework so you also need to install that.
-- project is using mongodb so you need to install pymongo and mongodb server with apt-get.
-- after doing that you need to import json project files with command(you can check it on stackoverflow).
-- you need to make sure users collection in neocortex db.also make sure that you import in neocortex named db.
-- to start server type following command in neointerface dir.
+- Install scrapy framework.
+- Install tornado framework.
+- Install pymongo and mongodb.
+- You will need to import json files to mongodb(you can check it on stackoverflow).
+- Following is a command to start the server.
 
 ```cmd
 python cortexserver.py
 ```
 
-- then start search server.(make sure that you have nodejs and depedency package installed).
+- You will also need to start the search server.Make sure that you have nodejs and depedency packages already installed.
 
 ```cmd
 nodejs searchserver.js
 
 ```
-- to start newscrawler.run following command.(in neocrawl dir)
+- Start news crawling.
 
 ```cmd
 scrapy crawl moneynewscrawler
 ```
-
-- to understand this project structure in more detail.
 - contact me:patelaniket165@gmail.com
