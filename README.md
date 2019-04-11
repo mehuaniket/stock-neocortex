@@ -1,6 +1,6 @@
 #### <b>INTRODUCTION</b>
 
-  - This is 7th semester project. There are many things still need to be done but not having much time I only able finish some of goals I had.
+  - This is 7th semester project. There are many things still needs to be done but not having much time, I was only able finish some of the goals I had.
   - Project can crawl news website.You can add any website to crawl, you will just need to provide xpath for 5 important things. (Title, description, author etc).
   - Project shows graph with news events mapped on it.
   - It does linear rigression module to predict future prices. prices are being fetched from quandl servers.
